@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style for the button */
+button {
+    height: 2.5rem; /* 1rem = font-size, can scale based on font size */
+    width: 2.5rem;  /* Same for width */
+    max-width: 10vw; /* Optional: max width to ensure buttons don't grow too large */
+    margin: 0 auto;  /* Optional: center buttons inside the grid cells */
+    background-color: white; /* White background */
+    border: none; /* Optional: remove border if there's no outline */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Drop shadow */
+}
+
+
+#container {
+    display: grid;                   /* Enable grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    grid-template-rows: repeat(2, minmax(50px, auto));    /* Rows with min height of 100px */
+    gap: 20px;                       /* Spacing between grid items */
+}

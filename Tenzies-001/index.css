@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the Tenzies div horizontally */
+    align-items: center;    /* Center the Tenzies div vertically */
+    width: 100vw;           /* Full viewport width */
+    height: 100vh;          /* Full viewport height */
+    background-color: white; /* White background */
+    overflow: hidden;       /* Prevent scrolling issues */
+}
+
+#tenzies {
+    width: 360px;           /* Fixed width for the Tenzies div */
+    height: 379px;          /* Fixed height for the Tenzies div */
+    background-color: #0B2434; /* Blue border color */
+    display: flex;
+    justify-content: center; /* Center the inner div horizontally */
+    align-items: center;    /* Center the inner div vertically */
+    border-radius: 8px;     /* Optional rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+#active {
+    width: 320px;           /* Fixed width for the Active div */
+    height: 320px;          /* Fixed height for the Active div */
+    background-color: #F5F5F5; /* Light gray background */
+    border-radius: 4px;     /* Optional rounded corners */
+}
+
+ 
